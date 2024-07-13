@@ -1,9 +1,9 @@
 <template>
-  <div class="product-layout">
-    <aside>
+  <div class="product-layout flex gap-5">
+    <aside class="bg-white border-r-2 p-4">
       <nav>
-        <NuxtLink to="/">Blog</NuxtLink>
-        <ul>
+        <NuxtLink to="/" class="font-bold">Blog</NuxtLink>
+        <ul class="flex flex-col gap-12 mt-12">
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
           <li><NuxtLink to="/products">Products</NuxtLink></li>
@@ -12,60 +12,29 @@
     </aside>
     <!-- Page content -->
 
-    <main>
+    <main class="flex-1 container mx-auto p-10">
       <slot />
-      <footer>
-        <p>Copyright &copy; 2024</p>
+      <footer
+        class="container mx-auto p-4 flex justify-between border-t-2 mt-12"
+      >
+        <ul class="flex gap-4">
+          <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/about">About</NuxtLink></li>
+          <li><NuxtLink to="/products">Products</NuxtLink></li>
+        </ul>
       </footer>
     </main>
   </div>
 </template>
 <style lang="scss" scoped>
 .product-layout {
-  display: flex;
-  gap: 1rem;
-  aside {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    height: 100vh;
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      > a {
-        color: #fff;
-        font-size: 2rem;
-        text-decoration: none;
-        margin-bottom: 50px;
-      }
-      ul {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        li {
-          margin: 0 1rem;
-          a {
-            color: #fff;
-            text-decoration: none;
-
-            &.router-link-exact-active {
-              color: #12b488;
-            }
-          }
-        }
-      }
+  a {
+    &.router-link-exact-active {
+      color: #12b488;
     }
   }
-  main {
-    flex: 1;
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 4px 10px;
-      text-align: center;
-    }
+  aside {
+    height: 100vh;
   }
 }
 </style>
