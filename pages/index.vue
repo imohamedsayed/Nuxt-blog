@@ -1,16 +1,5 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <NuxtLink to="/">Blog</NuxtLink>
-        <ul>
-          <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/products">Products</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
-
     <h2>Home Page</h2>
     <hr />
     <p>
@@ -43,7 +32,7 @@
 
 <style lang="scss" scoped>
 h2 {
-  color: green;
+  color: #12b488;
   margin-bottom: 50px;
 }
 </style>

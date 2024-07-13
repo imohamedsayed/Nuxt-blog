@@ -4,6 +4,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+definePageMeta({
+  layout: "products",
+});
+</script>
 
 <style lang="scss" scoped></style>

@@ -33,7 +33,7 @@
 
 <style lang="scss" scoped>
 h2 {
-  color: green;
+  color: #12b488;
   margin-bottom: 50px;
 }
 </style>
