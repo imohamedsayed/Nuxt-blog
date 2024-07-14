@@ -28,7 +28,11 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: "Nuxt Learning | Home Page",
+});
+</script>
 
 <style lang="scss" scoped>
 h2 {

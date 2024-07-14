@@ -10,6 +10,11 @@
           {{ product.price }}$
         </p>
         <p class="text-md font-bold">{{ product.description }}</p>
+
+        <button class="btn flex mt-5">
+          <i class="material-icons mr-2">add_shopping_cart </i>
+          <span>Add to cart</span>
+        </button>
       </div>
     </div>
   </div>
