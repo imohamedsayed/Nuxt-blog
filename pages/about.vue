@@ -26,10 +26,14 @@
       quisquam ratione officiis! Quae, repellendus illo vitae nobis ut quo qui
       nam harum nulla dolorem?
     </p>
+
+    {{ data }}
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useFetch("/api/currency/EGP");
+</script>
 
 <style lang="scss" scoped>
 h2 {
